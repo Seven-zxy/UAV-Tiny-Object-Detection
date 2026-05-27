@@ -32,6 +32,7 @@ in subsequent commits.
 
 ## 📂 Repository Structure
 
+```
 models/           # ECA module & HGBlock_ECA implementation
 configs/          # Model & training configurations
 train/            # Training scripts
@@ -39,6 +40,7 @@ data_processing/  # Dataset cleaning & format conversion
 results/          # Experiment logs, figures, ablation tables
 experiments/      # Including negative results
 docs/             # Additional documentation
+```
 
 ## 📜 Acknowledgements
 
@@ -50,7 +52,7 @@ docs/             # Additional documentation
 
 ## 📄 License
 
-This repository is released under the MIT License. 
+This repository is released under the Apache-2.0 License. 
 See [LICENSE](LICENSE) for details.
 
 Note: Dataset itself is not included in this repository due to 
@@ -58,5 +60,5 @@ regulatory considerations regarding the specific plant species studied.
 
 ---
 
-📧 Contact: [你的邮箱]  
-🎓 Author: [你的名字], Zhejiang Chinese Medical University
+📧 Contact: 15825585898@163.com
+🎓 Author: Xiaoyi Zheng (郑潇一), Zhejiang Chinese Medical University
