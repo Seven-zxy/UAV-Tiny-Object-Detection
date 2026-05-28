@@ -22,7 +22,7 @@ attention modules across architectures:
 
 | Architecture | Attention | Insertion position | Δ mAP@0.5 |
 | --- | --- | --- | --- |
-| YOLO26s | EMA | before neck FPN | **+4.2 pp** |
+| YOLO26s | EMA | neck outputs (P3/P4/P5), before Detect | **+4.2 pp** |
 | RT-DETR-L | EMA | after CCFF output | **−29%** |
 | RT-DETR-L | ECA | inside HGNetv2 backbone | **+5.4 pp** |
 
