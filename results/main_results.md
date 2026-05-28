@@ -17,6 +17,15 @@ validation performance, a larger gain on the untouched test set is
 positive evidence that the improvement reflects genuine generalization
 rather than validation-set overfitting.
 
+> **Honesty note.** The 0.782 figure is the **best run** across multiple
+> seeds. The improvement is real and reproducible on healthy runs, but it
+> is **not yet stable across all seeds** under the explored
+> hyperparameters — two of eight runs collapsed. The full multi-seed
+> analysis, including the failure mode and its root cause, is documented in
+> [`seed_stability.md`](seed_stability.md). The collapse is attributable to
+> hyperparameter sensitivity (DETR's all-background trivial solution on
+> small data), not to the ECA module itself.
+
 ## The Core Finding: Attention Position Matters
 
 The central scientific contribution of this work is not the absolute mAP
@@ -74,3 +83,4 @@ configuration is also reported:
 
 This model trades roughly 6 mAP points against RT-DETR-L+ECA in exchange
 for a substantially smaller and faster network.
+
