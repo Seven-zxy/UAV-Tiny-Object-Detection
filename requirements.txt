@@ -1,24 +1,32 @@
-# UAV-Tiny-Object-Detection — dependencies (Python >= 3.8)
+# UAV-Tiny-Object-Detection — pinned dependencies
+# Environment: Python 3.10, CUDA 11.8
+#
+# STEP 1 — install PyTorch (CUDA 11.8 build) from the PyTorch index:
+#   pip install torch==2.3.0 torchvision==0.18.0 \
+#       --index-url https://download.pytorch.org/whl/cu118
+#
+# STEP 2 — install the rest:
+#   pip install -r requirements.txt
 
-# Core deep learning
-torch>=2.0.0
-torchvision>=0.15.0
+# (torch / torchvision listed for reference; install via STEP 1 above)
+torch==2.3.0
+torchvision==0.18.0
 
 # Detection framework
-ultralytics>=8.3.0
+ultralytics==8.4.37
 
 # Data processing & numerics
-numpy>=1.24.0
-pandas>=2.0.0
-pyyaml>=6.0
-scipy>=1.10.0
+numpy==1.24.4
+pandas==2.0.3
+PyYAML==6.0.3
+scipy==1.10.1
 
 # Image I/O
-Pillow>=10.0.0
-opencv-python>=4.8.0
+pillow==10.4.0
+opencv-python==4.11.0.86
 
 # Visualization
-matplotlib>=3.7.0
+matplotlib==3.7.5
 
 # Utilities
-tqdm>=4.65.0
+tqdm==4.67.3
