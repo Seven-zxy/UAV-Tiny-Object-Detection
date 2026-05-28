@@ -1,0 +1,22 @@
+# UAV-Tiny-Object-Detection — conda environment
+# Recreate with:  conda env create -f environment.yml
+name: uav-detection
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu118
+      - torch==2.3.0
+      - torchvision==0.18.0
+      - ultralytics==8.4.37
+      - numpy==1.24.4
+      - pandas==2.0.3
+      - PyYAML==6.0.3
+      - scipy==1.10.1
+      - pillow==10.4.0
+      - opencv-python==4.11.0.86
+      - matplotlib==3.7.5
+      - tqdm==4.67.3
